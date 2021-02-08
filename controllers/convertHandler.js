@@ -26,7 +26,7 @@ function ConvertHandler() {
     let validUnit = ['gal','l','mi','km','lbs','kg'];
     if (input.match(/[a-z]+/gi) !== null) {
       if (input.match(/[a-z]+/gi).length === 1) {
-        result = validUnit.includes(input.match(/[a-z]+/gi)[0].toLowerCase()) ? input.match(/[a-z]+/gi)[0].toLowerCase() : "invalid unit";
+        result = validUnit.includes(input.match(/[a-z]+/gi)[0].toLowerCase()) ? input.match(/[a-z]+/gi)[0] : "invalid unit";
       }
       else {
         result = "invalid unit";

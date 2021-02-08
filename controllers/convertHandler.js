@@ -16,7 +16,7 @@ function ConvertHandler() {
       result = 1;
     } else {
       result = input.match(inputRegex)[0];
-      result = result.split('/').length > 2 ? "invalid number" : result;
+      result = result.split('/').length > 2 ? "invalid number" : eval(result);
     }
     return result;
   }
